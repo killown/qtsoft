@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icons/add.svg</file>
+        <file>Icons/0ad.svg</file>
+        <file>Icons/3Depict.svg</file>
+        <file>Icons/save.svg</file>
+        <file>Icons/erp.png</file>
+        <file>Icons/search_customer.svg</file>
+        <file>Icons/new_customer.svg</file>
+        <file>Icons/start_camera.svg</file>
+        <file>Icons/save_image.svg</file>
+        <file>../build-qtsoft-Desktop-Profile/images/new.jpg</file>
+        <file>images/blank.svg</file>
+        <file>Icons/focus.svg</file>
+        <file>Icons/trash.svg</file>
+    </qresource>
+</RCC>

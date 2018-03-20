@@ -1,0 +1,2708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>new_product</class>
+ <widget class="QMainWindow" name="new_product">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1003</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastrar Produto</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <widget class="QTabWidget" name="cest_tab">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Dados do Produto</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_21">
+        <item row="11" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0">
+         <layout class="QGridLayout" name="gridLayout_13">
+          <item row="0" column="3">
+           <widget class="QLabel" name="label_33">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Unidade</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QLabel" name="label_45">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Quantidade</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="4">
+           <widget class="QLabel" name="label_40">
+            <property name="text">
+             <string>Referência do Produto</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="5">
+           <widget class="QLineEdit" name="productReference_lineEdit_mainData"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="name_lineEdit_mainData">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Nome do Produto</string>
+            </property>
+            <property name="locale">
+             <locale language="Portuguese" country="Brazil"/>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QDoubleSpinBox" name="quantity_doubleSpinBox_mainData">
+            <property name="locale">
+             <locale language="Portuguese" country="Brazil"/>
+            </property>
+            <property name="showGroupSeparator" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="prefix">
+             <string/>
+            </property>
+            <property name="suffix">
+             <string/>
+            </property>
+            <property name="decimals">
+             <number>2</number>
+            </property>
+            <property name="maximum">
+             <double>99999999999.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>1.000000000000000</double>
+            </property>
+            <property name="value">
+             <double>0.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="unit_lineEdit_mainData">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Nome do Produto</string>
+            </property>
+            <property name="locale">
+             <locale language="Portuguese" country="Brazil"/>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_26">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Nome do Produto</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_35">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Cadastro</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="5">
+           <widget class="QCheckBox" name="enableDegree_checkBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Utilizar Grade</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="2">
+           <widget class="QDateEdit" name="dateRegister_mainData">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>115</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="displayFormat">
+             <string>dd/MM/yyyy</string>
+            </property>
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QGridLayout" name="gridLayout_4"/>
+        </item>
+        <item row="10" column="0">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_71">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Lucro Bruto</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="4">
+           <widget class="QDoubleSpinBox" name="sellingPrice_doubleSpinBox_mainData">
+            <property name="locale">
+             <locale language="Portuguese" country="Brazil"/>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="prefix">
+             <string>R$ </string>
+            </property>
+            <property name="maximum">
+             <double>99999999999.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QDoubleSpinBox" name="additionalCommission_doubleSpinBox_mainData">
+            <property name="locale">
+             <locale language="Portuguese" country="Brazil"/>
+            </property>
+            <property name="prefix">
+             <string>% </string>
+            </property>
+            <property name="maximum">
+             <double>99999999999.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="5">
+           <widget class="QLabel" name="label_72">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Lucro Liquido</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QLabel" name="label_68">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Preço de Venda</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLabel" name="label_42">
+            <property name="text">
+             <string>Comissão</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QDoubleSpinBox" name="profit_doubleSpinBox_mainData">
+            <property name="locale">
+             <locale language="Portuguese" country="Brazil"/>
+            </property>
+            <property name="prefix">
+             <string>R$ </string>
+            </property>
+            <property name="maximum">
+             <double>99999999999.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_67">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Preço de Custo</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="5">
+           <widget class="QDoubleSpinBox" name="netProfit_doubleSpinBox_mainData">
+            <property name="locale">
+             <locale language="Portuguese" country="Brazil"/>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="prefix">
+             <string>R$ </string>
+            </property>
+            <property name="maximum">
+             <double>99999999999.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QDoubleSpinBox" name="cost_doubleSpinBox_mainData">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="locale">
+             <locale language="Portuguese" country="Brazil"/>
+            </property>
+            <property name="showGroupSeparator" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="prefix">
+             <string>R$ </string>
+            </property>
+            <property name="suffix">
+             <string/>
+            </property>
+            <property name="decimals">
+             <number>2</number>
+            </property>
+            <property name="maximum">
+             <double>99999999999.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>1.000000000000000</double>
+            </property>
+            <property name="value">
+             <double>0.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="5" column="0">
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="blockProduct_checkbox_mainData">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Bloquear Produto</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_46">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Motivo</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLineEdit" name="reason_lineEdit_mainData">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="readOnly">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QDateEdit" name="dateBlock_mainData">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>115</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="readOnly">
+             <bool>false</bool>
+            </property>
+            <property name="displayFormat">
+             <string>dd/MM/yyyy</string>
+            </property>
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_41">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Data</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Cest">
+       <attribute name="title">
+        <string>Código Especificador</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="4" column="0" colspan="3">
+         <widget class="QTableView" name="cest_tableView">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A linha selecionada será salva ao finalizar o cadastro&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLineEdit" name="cestSearch_lineEdit"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Tabela de Código Especificador da Substituição Tributária</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Localizar Código</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="2">
+         <widget class="QComboBox" name="cest_comboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>Descrição</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Item</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>CEST</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NCM/SH</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>Localizar por</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_grade_grupo">
+       <attribute name="title">
+        <string>Grade/Grupo</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="11" column="8">
+         <widget class="QPushButton" name="newDegree_pushButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Adicionar Nova Grade</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons.qrc">
+            <normaloff>:/Icons/add.svg</normaloff>:/Icons/add.svg</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1" colspan="8">
+         <widget class="QTableView" name="degree_tableView">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Apenas Selecione para automáticamente inserir na lista de fornecedores&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="sortingEnabled">
+           <bool>true</bool>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>0</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+         </widget>
+        </item>
+        <item row="11" column="1" colspan="3">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Grades vínculadas</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1" colspan="8">
+         <widget class="QTableWidget" name="selectedDegree_tableWidget">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Contém a lista de fornecedores que serão vinculados ao produto. O item poderá ser removido quando receber um click. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Código</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Grade</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Grupo</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Subgrupo</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QComboBox" name="degreeFilter_comboBox">
+          <item>
+           <property name="text">
+            <string>Grade</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Grupo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Subgrupo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Código</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="7">
+         <widget class="QComboBox" name="primayColor_comboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>nenhuma</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Branco</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Amarelo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Laranja</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Preto</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Roxo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Água</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Água-marinha média</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Alizarina</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Amarelo esverdeado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Amarelo queimado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Âmbar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ameixa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ametista</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul ardósia claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul ardósia escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul ardósia médio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul areado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul aço</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul aço claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul cadete</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul camarada</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul celeste brilhante</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul cobalto</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul céu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul céu claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul céu profundo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul flor de milho</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul força aérea</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul furtivo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul manteiga</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul marinho</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul meia-noite</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul médio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul petróleo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul real</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul taparuere</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul violeta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Açafrão</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bordô</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Borgonha</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bronze</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Caramelo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cardo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Carmesim</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Carmim</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Castanho avermelhado	 </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Castanho claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cenoura</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cereja</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cereja Hollywood</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Chocolate</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ciano	 </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ciano escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza ardósia</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza ardósia claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza ardósia escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza fosco</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cobre</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Coral</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Coral claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Couro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Caqui escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Dainise</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Dourado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Dourado escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Escarlate</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Esmeralda</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Feldspato</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ferrugem</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Fuligem</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Fúchsia</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Grená</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Herbal</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Índigo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Jade</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Jambo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Jabuti preto</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Laranja</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Laranja escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Lilás</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Limão (cor)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Madeira</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Magenta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Magenta escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Malva</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom amarelado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom rosado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom sela</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Naval</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ocre</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Oliva</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Oliva escura</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Oliva parda</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Orquídea</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Orquídea escura</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Orquídea média</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ouro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pele</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Prata</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Preto</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Púrpura</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Púrpura média</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Quantum	</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa brilhante</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa chocante</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa forte</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa profundo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rútilo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Salmão</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Salmão claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Salmão escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Siena</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sépia</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Terracota</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tijolo refratário</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tomate</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Triássico</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Turquesa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Turquesa escura</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Turquesa média</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Urucum</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde espectro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde amarelado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde floresta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde lima</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde grama</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde mar claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde mar escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde mar médio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde militar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde Paris</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde primavera</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde primavera médio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde pálido</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde-azulado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho indiano</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho violeta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho violeta médio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho violeta pálido</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Violeta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Violeta escuro</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Localizar Grade</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Vincular Grade</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="8">
+         <widget class="QLabel" name="label_6">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Cor Secundária</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="6">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Localizar Por</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Cor Primária</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="8">
+         <widget class="QComboBox" name="secondaryColor_comboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>nenhuma</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Branco</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Amarelo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Laranja</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Preto</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Roxo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Água</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Água-marinha média</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Alizarina</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Amarelo esverdeado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Amarelo queimado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Âmbar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ameixa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ametista</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul ardósia claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul ardósia escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul ardósia médio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul areado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul aço</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul aço claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul cadete</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul camarada</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul celeste brilhante</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul cobalto</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul céu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul céu claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul céu profundo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul flor de milho</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul força aérea</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul furtivo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul manteiga</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul marinho</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul meia-noite</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul médio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul petróleo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul real</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul taparuere</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azul violeta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Açafrão</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bordô</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Borgonha</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bronze</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Caramelo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cardo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Carmesim</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Carmim</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Castanho avermelhado	 </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Castanho claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cenoura</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cereja</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cereja Hollywood</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Chocolate</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ciano	 </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ciano escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza ardósia</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza ardósia claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza ardósia escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cinza fosco</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cobre</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Coral</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Coral claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Couro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Caqui escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Dainise</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Dourado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Dourado escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Escarlate</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Esmeralda</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Feldspato</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ferrugem</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Fuligem</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Fúchsia</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Grená</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Herbal</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Índigo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Jade</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Jambo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Jabuti preto</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Laranja</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Laranja escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Lilás</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Limão (cor)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Madeira</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Magenta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Magenta escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Malva</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom amarelado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom rosado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marrom sela</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Naval</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ocre</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Oliva</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Oliva escura</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Oliva parda</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Orquídea</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Orquídea escura</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Orquídea média</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ouro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pele</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Prata</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Preto</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Púrpura</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Púrpura média</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Quantum	</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa brilhante</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa chocante</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa forte</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rosa profundo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rútilo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Salmão</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Salmão claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Salmão escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Siena</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sépia</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Terracota</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tijolo refratário</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tomate</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Triássico</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Turquesa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Turquesa escura</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Turquesa média</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Urucum</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde espectro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde amarelado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde floresta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde lima</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde grama</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde mar claro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde mar escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde mar médio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde militar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde Paris</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde primavera</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde primavera médio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde pálido</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Verde-azulado</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho escuro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho indiano</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho violeta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho violeta médio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Vermelho violeta pálido</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Violeta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Violeta escuro</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QPushButton" name="searchDegree_pushButton">
+          <property name="text">
+           <string>Localizar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="4">
+         <widget class="QLineEdit" name="searchDegree_lineEdit">
+          <property name="toolTip">
+           <string>Localizar um fornecedor a ser associado.</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Fornecedor</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="1" column="1">
+         <widget class="QPushButton" name="searchSupplier_pushButton">
+          <property name="text">
+           <string>Localizar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QPushButton" name="newSupplier_pushButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Se o fornecedor não existir, use esse botão para criar um novo. </string>
+          </property>
+          <property name="text">
+           <string>Adicionar Novo fornecedor</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons.qrc">
+            <normaloff>:/Icons/add.svg</normaloff>:/Icons/add.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="searchSupplier_lineEdit">
+          <property name="toolTip">
+           <string>Localizar um fornecedor a ser associado.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QTableView" name="supplier_tableView">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Apenas Selecione para automáticamente inserir na lista de fornecedores&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="sortingEnabled">
+           <bool>true</bool>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>0</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Localizar Fornecedor</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Vincular Fornecedor</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <widget class="QTableWidget" name="selectedSupplier_tableWidget">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Contém a lista de fornecedores que serão vinculados ao produto. O item poderá ser removido quando receber um click. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <column>
+           <property name="text">
+            <string>Código</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Fornecedor</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Listas de fornecedores a ser vínculados</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Foto</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_22">
+        <item row="0" column="0">
+         <widget class="QFrame" name="pic_frame_mainData">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>50</horstretch>
+            <verstretch>50</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="1" column="0">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>280</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="picture_label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(114, 159, 207);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="icons.qrc">:/images/blank.svg</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>280</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="1">
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_19">
+          <item row="1" column="2">
+           <widget class="QPushButton" name="camera_pushbutton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>USAR CAMÊRA</string>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/Icons/start_camera.svg</normaloff>:/Icons/start_camera.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>42</width>
+              <height>42</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="choosePicture_pushButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>ESCOLHER ARQUIVO</string>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/Icons/save_image.svg</normaloff>:/Icons/save_image.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>42</width>
+              <height>42</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="deleteImage_pushButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>REMOVER IMAGEM</string>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/Icons/trash.svg</normaloff>:/Icons/trash.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>42</width>
+              <height>42</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>Informações Complementares</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_20">
+        <item row="1" column="0" colspan="2">
+         <widget class="QTextBrowser" name="textBrowser_addtionalInfo">
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_44">
+          <property name="text">
+           <string>Observaçoes</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1003</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCadastro">
+    <property name="title">
+     <string>&amp;Cadastro</string>
+    </property>
+    <addaction name="action_registration"/>
+   </widget>
+   <addaction name="menuCadastro"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>42</width>
+     <height>42</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_registration"/>
+  </widget>
+  <action name="action_registration">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Icons/save.svg</normaloff>:/Icons/save.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Salvar Cadastro</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

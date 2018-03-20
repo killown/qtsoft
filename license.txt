@@ -1,0 +1,5 @@
+/* Copyright (C) QTsoft Systems, Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Thiago Lucio <systemofdown@gmail.com>, %MONTH% %YEAR%
+ */ 
